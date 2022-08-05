@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block body %}
+    <div class="img_txt center">
+      <image class="bg_img" src = "https://cdn.cnn.com/cnnnext/dam/assets/200618130737-u-s-coins-stock-full-169.jpg">
+      <span class="maxed b_left"><b>inspiration: </b>the problem and solution</span>
+      </image>
+    </div>
+    <center>
+    <div class="txt fill">
+      <br>
+      <p>imagine you’re a bright kid named julian. you’re staring at a huge jar of various coins on your desk, questioning its existence. the jar can’t talk, hear, or walk. it can’t be everyone’s favorite like you are. it’s just a jar, after all. however, you and the jar have something in common: you have not truly sorted your life out. so you set out to sort out your life and all its troubles. oh, and also the ubiquitous trouble of counting coins.</p>
+
+      <img class="julian" src="{{ url_for('static', filename='image/julian_coin.png')}}">
+
+      <!-- I love it!! -Julian -->
+      <p>recognizing coins is just like recognizing your life problems. for example, the american penny has the face of president abraham lincoln on it and your life problems have the face of susie from your 3rd period physics class all over it. through the power of yolov5's object detection model, the coin counter can do the same thing, meaning it can count coins, not fix your life. yolov5 extracts features unique to each coin in order to correctly identify it, something you can't do with the red flags in your life. after it identifies it, the coin counter is also able to count how many of each coin there are and sum up their amounts, even between other currencies. don't try it on yourself however, you might be disappointed in your worth.</p>
+    </div>
+    </center>
+{% endblock %}

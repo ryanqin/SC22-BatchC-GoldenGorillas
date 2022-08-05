@@ -1,1 +1,4 @@
-.DS_Store
+.*
+*.pt
+*.zip
+__pycache__

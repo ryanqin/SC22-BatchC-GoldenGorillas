@@ -1,3 +1,44 @@
-<h2>
-    The index works.
-</h2>
+{% extends "base.html" %}
+{% block body %}
+    <div id="bg-center" class="center col">
+
+      <div id="upload" class="center col">
+        <div id="bounding-upload" class="center col">
+          <span id="prompt" class="title">drag and drop an image</span>
+          <p class="secondary">or</p>
+          <label id="outer-upload-button" class="button center" for="upload-button">browse file</label>
+          <input id="upload-button" type="file" style="position:absolute; top:-100vh">
+        </div>
+      </div>
+
+      <div id="results" class="center col">
+        <div class="center row">
+          <image id="processed-image" src="https://cdn.cnn.com/cnnnext/dam/assets/200618130737-u-s-coins-stock-full-169.jpg"></image>
+          <div id="info" class="center col">
+            <div>
+              <div class="row title-left">
+                <span id="sum" class="title">$Total Sum</span>
+                <div>
+                  <select class="button" id="currency" onchange="curex(this)">
+                    <option value = "USD">usd</option>
+                    <option value = "EUR">eur</option>
+                    <option value = "CAD">cad</option>
+                    <option value = "JPY">jpy</option>
+                  </select>
+                </div>
+              </div>
+              <div id="breakdown">
+              </div>
+            </div>
+          </div>
+        </div>
+        <span id="processing">processing</span>
+        <div id="new-image" class="center">
+          <label for="new-button" class="button" onclick="another()">new image→</label>
+        </div>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}
+
+<!--   https://github.com/skyflaren/autoslide/blob/main/src/static/js/script.js   -->

@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block body %}
+    <div class = "img_txt">
+      <img class = "bg_img" src = "https://cdn.cnn.com/cnnnext/dam/assets/200618130737-u-s-coins-stock-full-169.jpg">
+      <span class = "b_left"><b>about us: </b> the golden gorillas</span>
+    </div>
+
+
+    <div class = "imgs">
+      <div class="container">
+        <p class ="img-overlay">anika is a senior at vista ridge high school in austin, texas. she assisted in the layout and designed the user experience and features of the front-end. she can be found at her local walmart getting black nail polish.</p>
+        <div class="overlay-color"><img class="image" src="{{ url_for('static', filename='image/anika.png')}}"></div>
+        <div class="names">
+            <p class="text">anika bahri</p>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <p class ="img-overlay">Glauk is a senior at Mamaroneck High School. </p>
+        <div class="overlay-color"><img class="image" src="{{ url_for('static', filename='image/GH.jpeg')}}"></div>
+        <div class="names">
+            <p class="text">Glauk Hizmo</p>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <p class ="img-overlay">jane lee is a senior at paul duke stem high school. she sparked the inspiration of doing a coin counter in the first place and contributed to the design of the front-end. jane can be found in their home cuddling their cats.</p>
+        <div class="overlay-color"><img class="image" src="{{ url_for('static', filename='image/jane.png')}}"></div>
+        <div class="names">
+            <p class="text">jane lee</p>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <p class ="img-overlay">julian is a senior at loyola high school of los angeles. he trained the a.i. in understanding the intricacies of coinage and worked on the websiste's front and back ends. he spends his free time with his coin jar by his side.</p>
+        <div class="overlay-color"><img class="image" src="https://cdn.discordapp.com/attachments/998386100051656794/1003750043196596295/IMG_3951.png"></div>
+        <div class="names">
+            <p class="text">julian maynes</p>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <p class ="img-overlay">justin is an incoming data science major at ucsd, but originally hails from toronto, canada. he designed the layout and user experience, as well as the middle-end connecting it all to the back-end. you can find him going by skyflaren, waba359, and qypress on the interwebs.</p>
+        <div class="overlay-color"><img class="image" src="{{ url_for('static', filename='image/justin_lu.jpg')}}"></div>
+        <div class="names">
+            <p class="text">justin lu</p>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <p class ="img-overlay">vincent is a senior at columbus high school in georgia. he has trained machine learning models in different frameworks. he is also known by his alias "the neural network whisperer." you can find him on the corner of your local zaxby's.</p>
+        <div class="overlay-color"><img class="image" src="{{ url_for('static', filename='image/vincent.jpg')}}"></div>
+        <div class="names">
+            <p class="text">vincent yang</p>
+        </div>
+      </div>
+  </div>
+{% endblock %}

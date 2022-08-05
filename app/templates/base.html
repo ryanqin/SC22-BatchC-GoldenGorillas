@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cointage | Home </title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://fonts.cdnfonts.com/css/chivo" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/inder" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    {% block head %}
+    {% endblock %}
+  </head>
+  <body>
+    <div class="in">
+      <div class = "inner">
+        <a href="{{ url_for('home')}}" {% if request.path.split("/")[-1] == "" %} class="current" {% endif %}>count</a>
+        <a href="{{ url_for('about')}}" {% if request.path.split("/")[-1] == "about" %} class="current" {% endif %}>about</a>
+        <a href="{{ url_for('inspo')}}" {% if request.path.split("/")[-1] == "inspo" %} class="current" {% endif %}>inspiration</a>
+      </div>
+    </div>
+
+    {% block body %}
+    {% endblock %}
+
+     <div class="bottom-bar center">
+      <span class="secondary"> a project by the <b>golden gorillas</b></span>
+      <a href="https://www.ai-camp.org" target = "_blank">
+        <image id="footer-logo" src="{{ url_for('static', filename='image/ai camp grey.png')}}"></image>
+      </a>
+    </div>
+  </body>
+</html>
+
+<!--   https://github.com/skyflaren/autoslide/blob/main/src/static/js/script.js   -->
