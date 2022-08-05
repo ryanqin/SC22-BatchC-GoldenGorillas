@@ -32,7 +32,7 @@ class ForceHttpsRedirects:
 
 app.wsgi_app = ForceHttpsRedirects(app.wsgi_app)
 
-detector = Detector('aug4-v8.pt', 0.6)
+detector = Detector('aug5-v9.pt', 0.6)
 detector.load_model()
 
 # check for legit file
